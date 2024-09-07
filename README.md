@@ -7,7 +7,7 @@ sudo su
 apt-get install raspberrypi-kernel-headers gcc make device-tree-compiler git
 ```
 ### (first time only) download Hermes-RPi driver sources
-git clone https://github.com/miero/tpa-hermes-rpi-dev.git
+git clone https://github.com/skaruppiah-dev/tpa-hermes-rpi-dev.git
 
 ### enter driver directory
 ```
