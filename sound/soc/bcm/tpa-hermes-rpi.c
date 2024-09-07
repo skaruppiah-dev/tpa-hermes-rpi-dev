@@ -232,7 +232,8 @@ static int snd_tpa_hermes_rpi_probe(struct platform_device *pdev)
 
 static int snd_tpa_hermes_rpi_remove(struct platform_device *pdev)
 {
-	return snd_soc_unregister_card(&snd_tpa_hermes_rpi);
+	snd_soc_unregister_card(&snd_tpa_hermes_rpi); 	// Fixed by Subbu, unregister method has no return.
+	return 0;					// so return 0
 }
 
 static const struct of_device_id snd_tpa_hermes_rpi_of_match[] = {
